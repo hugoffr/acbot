@@ -1,0 +1,15 @@
+version: '3'
+services:
+  mongo:
+    container_name: acbot-mongo
+    image: mongo:4.2
+    restart: always
+    environment:
+      - MONGO_INITDB_DATABASE=acbot
+      - MONGO_INITDB_ROOT_USERNAME=acbot
+      - MONGO_INITDB_ROOT_PASSWORD=dummy123
+    ports: 
+      - 27017:27017
+    volumes:
+      - ./.data/mongo/data:/data/db
+      - ./dump:/dump
