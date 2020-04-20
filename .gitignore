@@ -130,3 +130,9 @@ dmypy.json
 
 # Configuration files
 *config.ini
+
+# MongoDB data
+.data/
+
+# VSCode
+.vscode/
