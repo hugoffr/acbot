@@ -15,5 +15,6 @@ pip3 install -r requirements.txt
 On the root directory of the project run:
 
 ```bash
+docker-compose up -d
 python3 -m acbot
 ```
